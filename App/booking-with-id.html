@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://partner-portal-shared-cdn.prod.evelin.jsmd-group.com/fonts/OpenSans.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ireland Land of Green</h1>
+      <h2>Who we are in the Great Britain</h2>
+      <img src="../assets/onetheledge.png" alt="Crazy and happy irish people" />
+      <div class="main">
+        <p>
+          Ireland is a country in Europe. It is an island in the North Atlantic.
+          It is west of Great Britain. It is south of the North Sea. It is east
+          of the Atlantic Ocean. It is north of the Mediterranean Sea. Ireland
+          is a member of the European Union. It is a member of the United
+          Nations. It is a member of the Commonwealth of Nations. Ireland is a
+          republic. It has a population of 4.9 million people. The capital city
+          is Dublin. The official language is English. The currency is the euro.
+          The area is 70,273 square kilometres. The population density is 69
+          people per square kilometre. The climate is mild and wet. The main
+          industries are farming, fishing, and tourism. The main exports are
+          food, chemicals, and pharmaceuticals. The main imports are machinery,
+          chemicals, and pharmaceuticals. The main religions are Christianity
+          and Islam. Geopolitics: Ireland is an island. It is in the North
+          Atlantic Ocean. It is west of Great Britain. It is south of the North
+          Sea. It is east of the Atlantic Ocean. It is north of the
+          Mediterranean Sea. Ireland is a member of the European Union. It is a
+          member of the United Nations. It is a member of the Commonwealth of
+          Nations. Ireland is a republic. It has a population of 4.9 million
+          people. The capital city is Dublin. The official language is English.
+          The currency is the euro.
+        </p>
+
+        <!-- <product-catalog-widget
+          widget-id="4b9e82df-f760-4ece-9fbb-e4eb10a9500a"
+        ></product-catalog-widget>
+        <script
+          type="text/javascript"
+          src="https://widgets.dev.regiondo.net/catalog/v1/catalog-widget.min.js"
+        ></script> -->
+
+        <!-- <booking-widget
+          widget-id="05812303-1bf8-4050-a1f2-6919c4b9fc7a"
+        ></booking-widget> -->
+
+        <booking-widget
+          widget-id="f83b1121-1bc4-478a-8e19-690a876d605a"
+        ></booking-widget>
+
+        <!-- <div
+          class="regiondo-booking-widget"
+          data-locale="de_DE"
+          data-provider="RE243"
+          data-product="T-RE243-231891"
+          data-maximum-months="6"
+          data-title="Weekdays"
+          data-gift-option="true"
+          data-gift-option-highlighted="true"
+          data-url="https://yanapisotskaya.regiondo-test-de.de/"
+          data-font="Open Sans"
+        ></div> -->
+        <!-- <div class="widget"> -->
+
+        <script
+          type="text/javascript"
+          src="https://widgets.dev.regiondo.net/booking/v1/booking-widget.min.js"
+        ></script>
+
+        <!-- <booking-widget
+          widget-id="c88505ff-a14d-4766-9577-c2feb42d269f"
+        ></booking-widget>
+        <script
+          type="text/javascript"
+          src="https://widgets.staging.regiondo.net/booking/v1/booking-widget.min.js"
+        ></script> -->
+
+        <!-- <script
+          type="text/javascript"
+          src="http://localhost:3000/booking/v2/booking-v2-widget.min.js"
+        ></script> -->
+        <!-- </div> -->
+      </div>
+    </div>
+
+    <!-- <script
+      type="text/javascript"
+      src="https://widgets.dev.regiondo.net/booking/v2/booking-v2-widget.min.js"
+    ></script> -->
+    <!-- <script>
+      function querySelectorAllShadows(selector, el = document.body) {
+        const childShadows = Array.from(el.querySelectorAll("*"))
+          .map((el) => el.shadowRoot)
+          .filter(Boolean);
+
+        const childResults = childShadows.map((child) =>
+          querySelectorAllShadows(selector, child)
+        );
+
+        const result = Array.from(el.querySelectorAll(selector));
+        return result.concat(childResults).flat();
+      }
+
+      setTimeout(() => {
+        const widget = querySelectorAllShadows(".widget");
+        widget[0].scrollIntoView(false);
+      }, 1000);
+      // window.addEventListener("load", () => {
+      //   const button = document.querySelector(".widget");
+      //   console.log(button);
+      //   button.scrollIntoView();
+      // });
+    </script> -->
+    <!-- <script>
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          const node = mutation.target;
+          const isIncluded = Boolean(
+            node.getElementsByClassName("regiondo-booking-widget").length
+          );
+          // const isIncludedAfter = node.className === "booking-widget";
+          console.log("node.className", node.className);
+
+          if (isIncluded || isIncludedAfter) {
+            console.log("button");
+            // const button = querySelectorAllShadows(
+            //   ".regiondo-button-addtocart"
+            // );
+          }
+        });
+      });
+
+      const config = { subtree: true, childList: true };
+      const target = document.querySelector("body");
+      console.log(target);
+      observer.observe(target, config);
+    </script> -->
+  </body>
+</html>

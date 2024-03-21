@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&display=swap"
+      rel="stylesheet"
+    />
+    <title>Page Title</title>
+    <style>
+      :root {
+        --radius-percent: 0.4;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Sofia", cursive;
+        font-family: sans-serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Merriweather", serif;
+        font-family: "Open Sans", sans-serif;
+        font-family: "Roboto", sans-serif;
+        margin: 50px auto;
+        border: 2px solid black;
+        height: auto;
+        padding: 0.6em;
+        box-sizing: border-box;
+      }
+      .pill {
+        font-size: 14px;
+        width: 150px;
+        border-radius: calc(2.55em * var(--radius-percent));
+      }
+      .pill1 {
+        font-size: 20px;
+        width: 240px;
+        border-radius: calc(2.55em * var(--radius-percent));
+      }
+      .pill2 {
+        font-size: 24px;
+        width: 400px;
+        border-radius: calc(2.55em * var(--radius-percent));
+      }
+      .container {
+        display: block;
+        margin: 30px auto;
+        max-width: 1200px;
+        border: 2px solid #eee;
+        border-radius: 12px;
+      }
+    </style>
+    <template id="product-catalog-widget-styles">
+      <style>
+      .regiondo-booking-mobile-button {
+        text-indent: -9999px;
+        line-height: 0;
+      }
+      .regiondo-booking-mobile-button:after{
+        content:"Book voucher";
+        text-indent: 0;
+        display: block;
+        line-height: initial;
+      }
+      </style>
+    </template>
+  </head>
+  <body>
+    <!-- <div class="pill">Regiondo</div>
+    <div class="pill1">Checkfront</div> -->
+    <div class="pill2">Regiondo & Checkfront</div>
+    <div class="container">
+      <!-- Checkfront -->
+<product-catalog-widget
+  customer-code="regiondo2-booking-flow-demo.checkfront.com"
+  locale="en_US"
+  tenant="CHECKFRONT"
+></product-catalog-widget>
+
+      <!-- Dev -->
+      <!-- <product-catalog-widget widget-id="8a8c7380-9f4b-4085-b14a-8cf890ebe0eb"></product-catalog-widget> -->
+      <!-- <script type="text/javascript" src="https://widgets.dev.regiondo.net/catalog/v1/catalog-widget.min.js"></script> -->
+
+      <!-- Staging -->
+      <!-- <product-catalog-widget widget-id="a7042708-8584-4478-a372-01ba19d6d940"></product-catalog-widget> -->
+      <script type="text/javascript" src="https://widgets.staging.regiondo.net/catalog/v1/catalog-widget.min.js"></script>
+      
+        <!-- <product-catalog-widget 
+          styles-template-id="product-catalog-widget-styles"
+          widget-id="b2987161-d757-4028-bbcb-18765ed3a00a">
+        </product-catalog-widget>
+        <script 
+          type="text/javascript" 
+          src="https://widgets.regiondo.net/catalog/v1/catalog-widget.min.js">
+        </script> -->
+  </body>
+</html>

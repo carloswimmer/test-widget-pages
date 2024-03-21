@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Catalog</title>
+    <style>
+      #break-from-outside {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        line-height: 1.75;
+        letter-spacing: 0.02857em;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.87);
+        padding: 6px 16px;
+        font-size: 0.875rem;
+        background-color: #30efc9;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      #break-from-outside:hover {
+        background-color: #3bd6b7;
+      }
+
+      #break-from-outside:active {
+        background-color: #46bda5;
+      }
+    </style>
+  </head>
+  <body style="margin: 30px">
+    <button id="break-from-outside">Break from outside</button>
+
+    <product-catalog-widget
+      widget-id="8a8c7380-9f4b-4085-b14a-8cf890ebe0eb"
+    ></product-catalog-widget>
+    <script
+      type="text/javascript"
+      src="https://widgets.dev.regiondo.net/catalog/v1/catalog-widget.min.js"
+    ></script>
+    <script>
+      document
+        .getElementById("break-from-outside")
+        .addEventListener("click", function () {
+          throw new Error("Button break-from-outside was clicked");
+        });
+    </script>
+  </body>
+</html>

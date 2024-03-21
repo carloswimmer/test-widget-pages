@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Widget</title>
+    <link
+      rel="stylesheet"
+      href="https://partner-portal-shared-cdn.prod.evelin.jsmd-group.com/fonts/OpenSans.css"
+    />
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100vw;
+        background-color: #f6f0ea;
+      }
+      h1 {
+        font-family: "Open Sans", sans-serif;
+        color: #e6552d;
+      }
+      .container {
+        width: 482px;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: white;
+      }
+      .regiondo-booking-widget {
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Booking Widget</h1>
+    <div class="container">
+      <div
+        class="regiondo-booking-widget"
+        data-locale="en_US"
+        data-provider="RE57"
+        data-product="T-RE57-165897"
+        data-title="Product - Single Date"
+        data-url="https://regiondo-demo-account-muenchen.regiondo-test-uk.de/"
+        data-font="Open Sans"
+        data-width="450px"
+      ></div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://widgets.dev.regiondo.net/booking/v2/booking-v2-widget.min.js"
+    ></script>
+  </body>
+</html>
