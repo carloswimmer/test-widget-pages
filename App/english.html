@@ -61,7 +61,7 @@
     <!-- Google ad snippet -->
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-123123123"
+      src="https://www.googletagmanager.com/gtag/js?id=G-95EM64KPHG"
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -69,7 +69,7 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-      gtag("config", "AW-123123123");
+      gtag("config", "G-95EM64KPHG", { debug_mode: true });
     </script>
   </head>
   <body>
@@ -146,15 +146,16 @@
         src="https://widgets.dev.regiondo.net/catalog/v1/catalog-widget.min.js"
       ></script> -->
 
-      <product-details-widget 
-        customer-code="2794af5d423044be1bc678e279eececd315df06f2a14ab6ab5121672751eef1a" 
-        locale="en_US" 
-        product="74" >
-      </product-details-widget>
-      <script 
-        type="module" 
-        src="https://guest-widgets.bookingplatform.dev/product/v1/product-widget.min.js">
-      </script>
+      <product-catalog-widget
+        customer-code="2794af5d423044be1bc678e279eececd315df06f2a14ab6ab5121672751eef1a"
+        locale="en_US"
+        disable-features="location-filter product-sorting price-filter"
+        enable-features="requires-date-filter"
+      ></product-catalog-widget>
+      <script
+        type="module"
+        src="https://guest-widgets.bookingplatform.staging/catalog/v1/catalog-widget.min.js"
+      ></script>
 
       <!-- <product-details-widget
         widget-id="4046cc58-3996-4ba8-986c-ebdca8e31d0a"
